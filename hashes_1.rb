@@ -7,23 +7,31 @@ Activity:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+foods.each do |food, quantity|
+  p "#{food}"
+end
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+foods.each do |food, quantity|
+  p "#{quantity}"
+end
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
-# YOUR CODE HERE
+foods = {
+  apples: 23, 
+  grapes: 507, 
+  eggs: 48
+}
+p foods[:grapes]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
+p foods["bananas"] = 3
 
 
 #-------------------
@@ -38,15 +46,22 @@ p zoo
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
 # Write code that prints your email hash to the terminal.
+email = {
+  from: "Mom",
+  subject: "Good luck!",
+  to: "Me",
+  date: "Nov 3",
+  time: "1:00pm"
+}
 
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+puts email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+puts email.values
 
 
 #-------------------
@@ -97,3 +112,26 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+email = [
+  {
+  from: "David",
+  subject: "Hey!",
+  to: "Emily",
+  date: "Sept 13",
+  time: "10:36am",
+  },
+  {
+    from: "Johnny",
+    subject: "Miss you!",
+    to: "Kyle",
+    date: "May 22",
+    time: "8:14pm"
+  },
+  {
+    from: "Sallie Mae",
+    subject: "Loan Payment Due",
+    to: "Harrison Ryan",
+    date: "June 20",
+    time: "9:00am"
+  }
+  ]
